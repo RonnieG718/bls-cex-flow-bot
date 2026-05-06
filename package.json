@@ -1,0 +1,19 @@
+{
+  "name": "bls-cex-flow-bot",
+  "version": "1.0.0",
+  "description": "Track CEX deposit/withdrawal flows via Bitquery, store in Supabase, alert on threshold breaches via Discord",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "compute": "node src/compute_flows.js",
+    "refresh": "node src/refresh_addresses.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
